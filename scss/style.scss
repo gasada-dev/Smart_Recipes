@@ -1,1 +1,81 @@
 @import '_normalize';
+@import '_fonts';
+@import '_variables';
+@import '_mixins';
+
+body {
+  background-color: $secondary-color;
+}
+
+.text{
+  padding: 0;
+  margin: 0;
+  font-size: $text-size;
+  font-family: $font-primary;
+  color: $primary-color;
+}
+
+.title{
+  text-align: center;
+  font-size: $title-size;
+  color: $primary-color;
+  font-family: $font-primary;
+}
+
+.nav{
+padding: 2.1rem 9.5rem 0 9.5rem;
+height: 2.1rem;
+
+  .nav-menu{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+
+    .nav-li{
+      display: flex;
+      list-style-type: none;
+
+      .nav-menu-link{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        width: 12.5rem;
+        height: 2.5rem;
+        background-color: $primary-color;
+        color: $secondary-color;
+        border-radius: 3rem;
+      }
+    }
+  } 
+}
+
+.main{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5.6rem 7.5rem 0 7.5rem;
+  height: 51rem;
+
+  .main-basic_information{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .main-basic_information-composition{
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: center;
+      max-height: 13rem;
+      margin-top: 1rem;
+    }
+  }
+
+  .main-instruction{
+    max-width: 47rem;
+  }
+}
