@@ -325,8 +325,13 @@ template {
   font-weight: 700;
   src: local("Raleway"), url("/src/fonts/Raleway/Raleway-Bold.ttf") format("ttf");
 }
+html {
+  height: 100%;
+}
+
 body {
   background-color: #bee9db;
+  height: 100%;
 }
 
 .text {
@@ -339,14 +344,26 @@ body {
 
 .title {
   text-align: center;
-  font-size: 4rem;
+  font-size: 3.5rem;
   color: #0F1108;
   font-family: "Raleway";
+  margin: 0;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.container {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  max-width: 70%;
+  margin: 0 auto;
 }
 
 .nav {
-  padding: 2.1rem 9.5rem 0 9.5rem;
-  height: 2.1rem;
+  padding-top: 1.5%;
 }
 .nav .nav-menu {
   display: flex;
@@ -359,30 +376,45 @@ body {
 .nav .nav-menu .nav-li {
   display: flex;
   list-style-type: none;
+  background-color: #0F1108;
+  border-radius: 3rem;
 }
 .nav .nav-menu .nav-li .nav-menu-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-decoration: none;
-  width: 12.5rem;
-  height: 2.5rem;
-  background-color: #0F1108;
+  width: 11rem;
+  height: 2.8rem;
   color: #bee9db;
-  border-radius: 3rem;
+}
+.nav .nav-menu li:last-child {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 14rem;
+}
+.nav .nav-menu li:last-child .nav-menu-link-img {
+  width: 5.3rem;
+  height: 2.3rem;
+  margin: 0.15rem 0 0 1.5rem;
 }
 
 .main {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 5.6rem 7.5rem 0 7.5rem;
-  height: 51rem;
+  padding-top: 2rem;
+  flex: 1 1 auto;
+  max-height: 40%;
 }
 .main .main-basic_information {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.main .main-basic_information .main-basic_information-img {
+  max-width: 750px;
+  max-height: 460px;
 }
 .main .main-basic_information .main-basic_information-composition {
   display: flex;
@@ -393,5 +425,28 @@ body {
   margin-top: 1rem;
 }
 .main .main-instruction {
-  max-width: 47rem;
+  max-width: 40%;
+  padding-top: 1%;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .footer-contacts {
+  display: flex;
+  flex-direction: column;
+  width: 12rem;
+}
+.footer .footer-contacts .footer-contacts-text {
+  text-align: center;
+  font-size: 1.6rem;
+}
+.footer .footer-contacts .footer-contacts-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0.4rem 0;
 }/*# sourceMappingURL=style.css.map */
