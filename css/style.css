@@ -354,6 +354,12 @@ body {
   text-decoration: none;
 }
 
+.button {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
 .container {
   min-height: 100%;
   display: flex;
@@ -394,7 +400,7 @@ body {
   width: 14rem;
 }
 .nav .nav-menu li:last-child .nav-menu-link-img {
-  width: 5.3rem;
+  width: 4.87rem;
   height: 2.3rem;
   margin: 0.15rem 0 0 1.1rem;
 }
@@ -531,7 +537,7 @@ body {
 }
 @media (max-width: 1080px) {
   .text {
-    font-size: 1.15rem;
+    font-size: 1.1rem;
   }
   .title {
     font-size: 2rem;
